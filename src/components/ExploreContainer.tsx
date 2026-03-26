@@ -1,3 +1,5 @@
+import { IonFab, IonFabButton, IonIcon } from '@ionic/react';
+import { add } from 'ionicons/icons';
 import './ExploreContainer.css';
 
 interface ContainerProps { }
@@ -5,8 +7,11 @@ interface ContainerProps { }
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+     <IonFab>
+           <IonFabButton>
+             <IonIcon icon={add}></IonIcon>
+           </IonFabButton>
+         </IonFab>
     </div>
   );
 };

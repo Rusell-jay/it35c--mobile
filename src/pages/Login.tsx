@@ -4,7 +4,7 @@ import {IonButton, IonContent, IonHeader, IonPage, IonToolbar, IonTitle, useIonR
 const Login: React.FC = () => {
   const router = useIonRouter();
 
-  const doLogin = (credentials: any) => {
+  const doLogin = () => {
     router.push('/app', 'forward', 'replace');
   };
   return (
@@ -15,7 +15,7 @@ const Login: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        <IonButton expand="full" onClick={() => doLogin({})}>
+        <IonButton expand="full" onClick={() => doLogin()}>
           Login
         </IonButton>
       </IonContent>

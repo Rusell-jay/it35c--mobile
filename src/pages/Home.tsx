@@ -1,7 +1,7 @@
-import { IonContent, IonFab, IonFabButton, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent,  IonHeader,  IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import {add} from 'ionicons/icons';
+
 
 const Home: React.FC = () => {
 
@@ -9,22 +9,22 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonButton slot="start">
+            <IonMenuButton></IonMenuButton>
+          </IonButton>
+
           <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader> 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
+            <IonTitle size="large">Home </IonTitle>
           </IonToolbar>
-        </IonHeader>  
-        <ExploreContainer  />
-        <IonFab vertical="bottom" horizontal="end" slot="fixed">
-          <IonFabButton>
-            <IonIcon icon={add} />
-          </IonFabButton>
-        </IonFab>
-      </IonContent>
+        </IonHeader> 
+
+        <ExploreContainer  />            
+    </IonContent>
     </IonPage> 
     
   );

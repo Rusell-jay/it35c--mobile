@@ -1,6 +1,6 @@
 import Feed from "./home-tabs/Feed";
 import Search from "./home-tabs/Search";
-import Favorites from "./home-tabs/favorites";
+import Favorites from "./home-tabs/Favorites";
 import { IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { bookmarkOutline, search, star } from "ionicons/icons";

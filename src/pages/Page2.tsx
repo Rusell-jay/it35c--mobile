@@ -9,7 +9,7 @@ const Page2: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton></IonMenuButton>
           </IonButtons>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Page 2</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
